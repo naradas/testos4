@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+{{ partial "head.html" . }}
+</head>
+
+
+<body>
+
+
+{{ partial "header.html" . }}
+
+
+
+    <div class="header-white">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-5 header-welcome-text">
+
+                    <p><strong>Thank you for visiting my website </strong></p>
+
+                    <p>I have included a sampling of my photography here. You will see images of people, nature, and places. I believe in 
+                        natural photography and always minimize the amount of postproduction work with my photography. </p>
+
+                    <p>Some visual art historians refer to this philosophy as documentary image capturing, and perhaps that fits, 
+                        as I used to make documentary films. I like to capture moments as they are, where they are, and immortalize 
+                        them as photographs. I see it as capturing time and space forever.</p>
+
+                    <p>I hope that you enjoy the visual show here, and perhaps decide to commission me to photograph your 
+                        special vent or project.</p>
+
+                </div>
+                <div class="col-lg-7 portrait"><img src="assets/images/aida-dargahi-portrait.jpg" class="pull-right img-responsive"></div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-lg-12">
+                <div class="masonry">
+                    {{ range (where .Data.Pages "Section" "portfolio") }}
+                    <div class="item">
+
+                        {{ if and (isset .Params "image") .Params.image }}
+                        {{ if eq .Params.showonlyimage true }}
+
+
+
+                        {{ else }}
+                        {{ end }}
+                        {{ end }}
+                        {{ if eq .Params.showonlyimage true }}
+                        {{ else }}
+                        {{ end }}
+
+
+
+
+                        <br>
+                        <p>{{ .Params.filename }}</p>
+                        <p>{{ .Params.categories }}</p>
+                        <br><a href="{{ .Permalink }}"><img src="{{ .Params.image }}" alt="{{ .Params.filename }}"></a>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+
+
+        </div>
+    </div>  
+
+
+
+
+
+
+
+
+{{ partial "footer.html" . }}
+{{ partial "scripts.html" . }}
+
+
+</body>
+</html>

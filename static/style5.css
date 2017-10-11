@@ -1,0 +1,279 @@
+body {
+    margin: 0px;
+    background-color: #f2f2f2;
+    font-family: 'Cardo', serif;
+    font-size: 16px;
+}
+
+
+h2 {
+    margin: 0px;
+    font-family: 'Cardo', serif;
+    font-size: 36px;
+}
+
+
+.container-fluid {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+}
+
+.container-full {
+    width: 100%;
+}
+
+
+
+.masonry {
+    margin: 1.5em 0;
+    padding: 0;
+    -moz-column-gap: 30px;
+    -webkit-column-gap: 30px;
+    column-gap: 30px;
+}
+
+.item {
+    display: inline-block;
+    background: #fff;
+    padding: 20px;
+    margin: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-shadow: 2px 2px 4px 0 #ccc;
+}
+
+
+.item img {
+    /* Just in case there are inline attributes */
+    width: 100% !important;
+    height: auto !important;
+    margin: 0px;
+    background-color: white;
+    padding: 30px;
+}
+
+
+
+.header-top {
+    background-color: #f2f2f2;
+    height: 80px;
+    background-image: url(assets/images/header-background.jpg);
+    background-blend-mode: multiply;
+    background-repeat: repeat-x;
+    background-size: contain;
+    opacity: 0.4;
+    
+}
+
+
+.header-bottom {
+    background-color: white;
+}
+
+
+.header-bottom h1 {
+    font-family: 'Arizonia', cursive;
+    font-size: 90px;
+    color: black;
+    text-shadow: 2px 2px 5px rgba(150, 150, 150, 1);
+    margin-top: -50px;
+}
+
+.header-white {
+    background-color: white;
+    width: 100%;
+    padding: 25px;
+}
+
+.aida-footer {
+    background-color: #1d1d1d;
+    height: 100px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    
+    background-image: url(assets/images/header-background.jpg);
+    background-blend-mode:hard-light;
+    background-repeat: repeat-x;
+    background-size: contain;
+    opacity: 0.4;
+}
+
+.aida-footer-inner h5 {
+    font-family: 'Arizonia', cursive;
+    font-size: 20px;
+    color: black;
+}
+
+.aida-footer-inner h4 {
+    font-family: 'Cardo', serif;
+    font-size: 14px;
+    color: black;
+}
+
+.portrait img{
+
+    -webkit-box-shadow: 10px 10px 32px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 32px -12px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 32px -12px rgba(0,0,0,0.75);
+}
+
+
+
+
+
+
+
+
+
+#custom-bootstrap-menu.navbar-default .navbar-brand {
+    color: rgba(119, 119, 119, 1);
+}
+#custom-bootstrap-menu.navbar-default {
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 1);
+    border-bottom-width: 1px;
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+    color: rgba(119, 119, 119, 1);
+    background-color: rgba(248, 248, 248, 0);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
+    color: rgba(247, 244, 244, 1);
+    background-color: rgba(3, 3, 3, 1);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
+    color: rgba(85, 85, 85, 1);
+    background-color: rgba(231, 231, 231, 1);
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle {
+    border-color: #ddd;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
+    background-color: #ddd;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+    background-color: #888;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #ffffff;
+}
+
+
+
+.bottom-50 {
+    margin-bottom: 90px;
+}
+
+
+.item-single{
+    background: #fff;
+    padding: 20px;
+    margin: 20px;
+
+}
+
+.bottom-50 img {
+    /* Just in case there are inline attributes */
+
+    margin: 0px;
+    background-color: white;
+    padding: 30px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-shadow: 2px 2px 4px 0 #ccc;
+}
+
+
+.portfolio .item2 {
+    float: left;
+    
+    background: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-shadow: 2px 2px 4px 0 #ccc;
+}
+
+.item-margin {
+    margin: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 320px) {
+    .masonry {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+    .aida-logo h1 {
+        font-size: 40px;
+    }    
+}
+
+@media only screen and (min-width: 700px) {
+    .masonry {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+    
+    .aida-logo h1 {
+        font-size: 60px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .masonry {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+    .aida-logo h1 {
+        font-size: 70px;
+    }
+    
+}
+
+@media only screen and (min-width: 1100px) {
+    .masonry {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+    
+    .aida-logo h1 {
+        font-size: 90px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .wrapper {
+        width: 1260px;
+    }
+    
+    .aida-logo h1 {
+        font-size: 90px;
+    }
+}

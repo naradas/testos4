@@ -1,0 +1,11 @@
+baseURL = "http://www.aidadargahi.com/"
+languageCode = "en-us"
+title = "Aida Dargahi - Photography Portfolio Website"
+
+
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+image = "image"
+
